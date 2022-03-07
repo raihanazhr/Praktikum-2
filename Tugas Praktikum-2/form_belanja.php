@@ -12,7 +12,7 @@
 <body>
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-8">
+	<div class="col-md-8">
     <h2 style="text-align:left;">Belanja Online</h2>
     <form method="POST" action="form_belanja.php">
 <div class="container">
@@ -52,8 +52,8 @@
   </div>
 </div>
 </form>
-		</div>
-		<div class="col-md-4">
+</div>
+<div class="col-md-4">
     <ul class="list-group">
       <li class="list-group-item active" aria-current="true">Daftar Harga</li>
       <li class="list-group-item">TV : 4.200.000</li>
@@ -61,8 +61,8 @@
       <li class="list-group-item">Mesin Cuci : 3.800.000</li>
       <li class="list-group-item active" aria-current="true">Harga dapat berubah setiap saat</li>
   </ul>
-		</div>
-	</div>
+</div>
+</div>
 </div>
 <?php
 $proses = $_POST['proses'];
