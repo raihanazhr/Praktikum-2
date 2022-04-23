@@ -5,12 +5,13 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Praktikum 04</h1>
+            <h1>Praktikum 01</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item active"><a href="index.php">Home</a></li>
-              <li class="breadcrumb-item"><a href="project1.php">Praktikum 04</a></li>
+              <li class="breadcrumb-item "><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Praktikum 01</a></li>
+              <li class="breadcrumb-item active"><a href="#">Array Buah</a></li>
             </ol>
           </div>
         </div>
@@ -24,7 +25,7 @@
             <!-- Default box -->  
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Data Persegi Panjang</h3>
+                <h3 class="card-title">Array Buah</h3>
 
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -37,36 +38,35 @@
               </div>
               <div class="card-body">
     <?php
-    class persegipanjang {
-    private $panjang;
-    private $luas;
+    $ar_buah = ["pepaya", "Mangga", "Pisang", "jambu"];
+    //cetak buah index ke 2
+    echo "ini adalah hasil data data buah dalam array";
+    echo "<br/>$ar_buah[2]";
 
-    function __construct ($p, $l) {
-        $this->panjang = $p;
-        $this->luas = $l;
+    //cetak jumlah buah 
+    echo '<br/>Jumlah buah ' .count($ar_buah);
+
+    //cetak seluruh buah
+    echo "<ol>";
+    foreach ($ar_buah as $buah) {
+        echo "<li>$buah</li>";
     }
-
-    function getkeliling() {
-        return 2 * ($this->panjang + $this->luas);
+    echo "</ol>";
+    //=================================================
+    //tambahkan buah
+    $ar_buah[]="durian";
+    //hapus buah
+    unset($ar_buah[1]);
+    //ubah buah index ke dua menjadi manggis
+    $ar_buah[2] = "manggis";
+    //cetak seluruh buah dengan index nya
+    echo "<ul>";
+    foreach ($ar_buah as $k => $v) {
+        echo "<li>buah index - $k adalah $v </li>";
     }
-
-    function getluas() {
-        return $this->panjang * $this->luas;
-    }
-}
-?>
-<?php
-$persegipanjang1 = new persegipanjang(20, 14);
-$persegipanjang2 = new persegipanjang(16, 8);
-
-echo"<br/>";
-echo "<br/>Keliling persegipanjang 1 adalah = ". $persegipanjang1->getkeliling();
-echo "<br/>Keliling persegipanjang 2 adalah = ". $persegipanjang2->getkeliling();
-echo "<br/>Luas persegipanjang 1 adalah = ". $persegipanjang1->getluas();
-echo "<br/>Luas persegipanjang 2 adalah = ". $persegipanjang2->getluas();
-
-?>
-</div>
+    echo "</ul>"
+  ?>
+              </div>
               <!-- /.card-body -->
               <div class="card-footer">
               </div>

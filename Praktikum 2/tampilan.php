@@ -5,12 +5,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Praktikum 04</h1>
+            <h1>Project 01 Pemograman Web</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item active"><a href="index.php">Home</a></li>
-              <li class="breadcrumb-item"><a href="project1.php">Praktikum 04</a></li>
+              <li class="breadcrumb-item"><a href="project1.php">Project 1</a></li>
             </ol>
           </div>
         </div>
@@ -24,7 +24,7 @@
             <!-- Default box -->  
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Data Persegi Panjang</h3>
+                <h3 class="card-title">Selamat Datang!</h3>
 
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -36,37 +36,8 @@
                 </div>
               </div>
               <div class="card-body">
-    <?php
-    class persegipanjang {
-    private $panjang;
-    private $luas;
-
-    function __construct ($p, $l) {
-        $this->panjang = $p;
-        $this->luas = $l;
-    }
-
-    function getkeliling() {
-        return 2 * ($this->panjang + $this->luas);
-    }
-
-    function getluas() {
-        return $this->panjang * $this->luas;
-    }
-}
-?>
-<?php
-$persegipanjang1 = new persegipanjang(20, 14);
-$persegipanjang2 = new persegipanjang(16, 8);
-
-echo"<br/>";
-echo "<br/>Keliling persegipanjang 1 adalah = ". $persegipanjang1->getkeliling();
-echo "<br/>Keliling persegipanjang 2 adalah = ". $persegipanjang2->getkeliling();
-echo "<br/>Luas persegipanjang 1 adalah = ". $persegipanjang1->getluas();
-echo "<br/>Luas persegipanjang 2 adalah = ". $persegipanjang2->getluas();
-
-?>
-</div>
+                Terimakasih sudah mengunjungi laman ini. Berikut adalah Hasil Project saya
+              </div>
               <!-- /.card-body -->
               <div class="card-footer">
               </div>
